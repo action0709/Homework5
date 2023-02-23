@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -13,27 +14,56 @@ public class Main {
             System.out.println("Человеку 18 или больше лет");
         } else {
             System.out.println("Возраст совершеннолетия еще не наступил и нужно немного подождать");
-        } ;
+        }
+        ;
     }
 
-     public static void task2 () {
-         System.out.println("Задача 2");
-         // Пишем код для задачи 2
-         byte temperature = -15;
-         if (temperature>= -5) {
-             System.out.println("Сегодня тепло, можно идти без шапки");
-         } else {
-             System.out.println("На улице холодно, нужно надеть шапку");
-         }
-     }
-    public static void task3 () {
+    public static void task2() {
+        System.out.println("Задача 2");
+        // Пишем код для задачи 2
+        byte temperature = -15;
+        if (temperature >= -5) {
+            System.out.println("Сегодня тепло, можно идти без шапки");
+        } else {
+            System.out.println("На улице холодно, нужно надеть шапку");
+        }
+    }
+
+    public static void task3() {
         System.out.println("Задача 3");
         // Пишем код для задачи 3
         byte speed = 80;
-        if (speed>= 60) {
-            System.out.println("Если скорость "+speed+", то придется заплатить штраф");
+        if (speed >= 60) {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
         } else {
-            System.out.println("Если скорость "+speed+", то можно ездить спокойно");
+            System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        // Пишем код для задачи 4
+        byte age = 25;
+        boolean preschooler = (age >= 2 && age <= 6);
+        boolean schoolboy = (age >= 7 && age <= 18);
+        boolean student = (age > 18 && age <= 24);
+        boolean worker = (age > 24);
+        if (preschooler) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+        } else {
+            if (schoolboy) {
+                System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+            } else {
+                if (student) {
+                    System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+                } else {
+                    if (worker) {
+                        System.out.println("Если возраст человека равен " + age + ", то ему пора ходить на работу");
+                    } else {
+                        System.out.println("Если возраст человека равен " + age + ", то возраст введен некорректно");
+                    }
+                }
+            }
         }
     }
 }
