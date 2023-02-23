@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -99,5 +100,14 @@ public class Main {
 
             }
         }
-
+    public static void task7() {
+        System.out.println("Задача 7");
+        // Пишем код для задачи 7
+        int one=7;
+        int two=4;
+        int three=8;
+        if (one>two){if (one>three){System.out.println("Большее из чисел one "+one);}
+            else{System.out.println("Большее из чисел three "+three);}}
+        else {System.out.println("Большее из чисел two "+two);};
+    }
     }
